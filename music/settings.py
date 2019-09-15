@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'corsheaders',
+
     # add rest_framework and the name of your application
-    'rest_framework',
+    #'rest_framework',
+    # add graphene_django
+    'graphene_django',
     'api',
 ]
 
@@ -125,3 +129,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# graphql graphene settings
+GRAPHENE = { 'SCHEMA': 'api.schema.schema', }

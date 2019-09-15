@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# graphql imports
+from graphene_django.views import GraphQLView
+from api.schema import schema
+# to fix the 403 forbidden error on post
+from django.views.decorators.csrf import csrf_exempt
+
 # add path and associate with it the urls file of your application
 
 urlpatterns = [
-    path('', include('api.urls')),
+    path ('', csrf_exempt(GraphQLView.as_view(graphiql=True))),
     path('admin/', admin.site.urls),
 ]

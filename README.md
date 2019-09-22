@@ -1,4 +1,4 @@
-# Music Website / Django api
+# Music DataBase / Django api
 
 
-### To run the project, in terminal run: `pip install requirements.txt`, then `python manage.py migrate`, then run `python manage.py runserver`.
+#### To run the project, in terminal run: `pip install requirements.txt`, then `python manage.py migrate`, then run `python manage.py runserver`.

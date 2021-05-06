@@ -1,4 +1,11 @@
 # Music DataBase / Django api
 
+#### [React Frontend Repo](https://github.com/AyahRamahi/music-web)
 
-#### To run the project, in terminal run: `pip install requirements.txt`, then `python manage.py migrate`, then run `python manage.py runserver`.
+
+##### To run the project:
+
+* `pip install requirements.txt`
+* `python manage.py migrate`
+*  `python manage.py runserver`
+
